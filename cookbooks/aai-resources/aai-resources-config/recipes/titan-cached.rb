@@ -6,6 +6,7 @@
     mode "0644"
     variables(
 :STORAGE_HOSTNAME => node["aai-resources-config"]["STORAGE_HOSTNAME"],
+:STORAGE_BACKEND => node["aai-resources-config"]["STORAGE_BACKEND"],
 :STORAGE_HBASE_TABLE => node["aai-resources-config"]["STORAGE_HBASE_TABLE"],
 :STORAGE_HBASE_ZOOKEEPER_ZNODE_PARENT => node["aai-resources-config"]["STORAGE_HBASE_ZOOKEEPER_ZNODE_PARENT"],
 :DB_CACHE_CLEAN_WAIT => node["aai-resources-config"]["DB_CACHE_CLEAN_WAIT"],
